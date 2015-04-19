@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/calendar_cell"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:padding="5dip" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_weight="70">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+                <TextView 
+                    android:id="@+id/text_rabiulawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_rabiulawal"/>
+                <TextView 
+                    android:id="@+id/text_capjigwe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_capjigwe"/>
+                <TextView 
+                    android:id="@+id/text_urip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_urip"/>
+                <TextView 
+                    android:id="@+id/text_pasah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_pasah"/>
+                <TextView 
+                    android:id="@+id/text_tungleh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_tungleh"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text=""/>
+
+                <TextView 
+                    android:id="@+id/text_duka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_duka"/>
+                <TextView 
+                    android:id="@+id/text_kala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_kala"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <ImageView 
+                    android:id="@+id/image_bulan"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/solid_red"
+                    android:contentDescription="@string/purnama"/>
+                <TextView 
+                    android:id="@+id/text_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/default_tanggal"/>
+
+                 <ImageView
+                     android:id="@+id/icon_tanggal"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/dot"
+                     android:visibility="gone" />
+
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="gone"
+                        android:orientation="vertical" >
+
+                <TextView 
+                    android:id="@+id/text_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_25"/>
+                <TextView 
+                    android:id="@+id/text_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_26"/>
+                <TextView 
+                    android:id="@+id/text_mina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_mina"/>
+                <TextView 
+                    android:id="@+id/text_kliwon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_kliwon"/>
+                <TextView 
+                    android:id="@+id/text_jaya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_jaya"/>
+                 <TextView 
+                     android:id="@+id/text_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_11"/>
+                <TextView 
+                    android:id="@+id/text_pepet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_pepet"/>
+                <TextView 
+                    android:id="@+id/text_ogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_ogan"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_weight="30"
+         android:gravity="center"
+         android:visibility="gone"
+         android:orientation="vertical" >
+
+                <TextView 
+                    android:id="@+id/text_watek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_watek"/>
+                <TextView 
+                    android:id="@+id/text_lintang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_lintang"/>
+                <TextView 
+                    android:id="@+id/text_rasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/default_rasi"/>
+                 <TextView 
+                     android:id="@+id/text_sasih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_sasih"/>
+        </LinearLayout>
+
+</LinearLayout>
