@@ -4,6 +4,7 @@
 package com.herokuapp.balekulkulandroid;
 
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Random;
 
@@ -51,8 +52,9 @@ public class DemoActivity extends Activity {
 
 		
 		//Create the adapters for the gridviews
+        GregorianCalendar month = (GregorianCalendar) GregorianCalendar.getInstance();
 		vertGridViewAdapter = new VertGridViewAdapter(mContext,vertData);
-		horzGridViewAdapter = new HorzGridViewAdapter(mContext,horzData);
+		horzGridViewAdapter = new HorzGridViewAdapter(mContext,horzData, month);
 		
 		//Set the adapter for the gridviews
 		vertGridView.setAdapter(vertGridViewAdapter);

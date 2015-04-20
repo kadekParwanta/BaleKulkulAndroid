@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.herokuapp.balekulkulandroid.calendar.CalendarFragment;
+import com.herokuapp.balekulkulandroid.calendar.TempCalendarFragment;
 import com.herokuapp.balekulkulandroid.dictionary.DictionaryFragment;
 
 public class MainActivity extends ActionBarActivity implements
@@ -67,7 +68,7 @@ public class MainActivity extends ActionBarActivity implements
 			fragmentManager
 			.beginTransaction()
 			.replace(R.id.container,
-					PlaceholderFragment.newInstance(position + 1)).commit();
+					TempCalendarFragment.newInstance(position + 1)).commit();
 			break;
 		default:
 			break;

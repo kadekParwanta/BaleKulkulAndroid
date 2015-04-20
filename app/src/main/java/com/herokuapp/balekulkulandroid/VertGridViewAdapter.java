@@ -17,6 +17,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.herokuapp.balekulkulandroid.calendar.TempCalendarFragment;
+
 public class VertGridViewAdapter extends BaseAdapter{
 	
 	private List<DataObject> data;
@@ -45,11 +47,11 @@ public class VertGridViewAdapter extends BaseAdapter{
 		
 		
 		//Initialize the layout params
-		DemoActivity.vertGridView.setNumRows(rows);
-		DemoActivity.vertGridView.setNumColumns(columns);
+		TempCalendarFragment.vertGridView.setNumRows(rows);
+        TempCalendarFragment.vertGridView.setNumColumns(columns);
 		
 		//HorzGridView size not established yet, so need to set it using a viewtreeobserver
-		ViewTreeObserver vto = DemoActivity.vertGridView.getViewTreeObserver();
+		ViewTreeObserver vto = TempCalendarFragment.vertGridView.getViewTreeObserver();
 		
 		OnGlobalLayoutListener onGlobalLayoutListener = new OnGlobalLayoutListener() {
 			
@@ -58,13 +60,13 @@ public class VertGridViewAdapter extends BaseAdapter{
 			@Override
 			public void onGlobalLayout() {
 				//First use the gridview height and width to determine child values
-				rowHeight = (int)((float)(DemoActivity.vertGridView.getHeight()/rows)-2*itemPadding);
-				columnWidth = (int)((float)(DemoActivity.vertGridView.getWidth()/columns)-2*itemPadding);
-				
-				DemoActivity.vertGridView.setColumnWidth(columnWidth);
+				rowHeight = (int)((float)(TempCalendarFragment.vertGridView.getHeight()/rows)-2*itemPadding);
+				columnWidth = (int)((float)(TempCalendarFragment.vertGridView.getWidth()/columns)-2*itemPadding);
+
+                TempCalendarFragment.vertGridView.setColumnWidth(columnWidth);
 				
 				//Then remove the listener
-				ViewTreeObserver vto = DemoActivity.vertGridView.getViewTreeObserver();
+				ViewTreeObserver vto = TempCalendarFragment.vertGridView.getViewTreeObserver();
 				
 				if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
 					vto.removeOnGlobalLayoutListener(this);
